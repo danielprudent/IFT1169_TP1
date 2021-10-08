@@ -88,8 +88,34 @@ int main(int argc, char** argv) {
 	<<endl<<"Appuyer sur 5 pour la reservation dun vol"
 	<<endl<<"Appuer 0 pour sortir/terminer\n";
 
+int choice=0;
+switch (choice)
+	{
+	 case 1:
+        listFlight();
+        break;
+    case 2:
+        addNewFlight();
+        break;
+    case 3:
+        DeleteFlight();
+        break;
+    case 4:
+        modifyFlight();
+        break;
+    case 5:
+        bookAFlight();
+        break;
+	
+
+	default: cout<<" INVALIDE!!! \n\n";
+		break;
 
 
+	}	// Ending case loop.
+
+
+	cout<<"\n   PROCESS COMPLETED...\n\n";
 
 
     chargerVol();
